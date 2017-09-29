@@ -17,7 +17,7 @@ public class test {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		Socket socket = new Socket("123.206.76.17", 808);
-	    // 向服务端程序发送数据 同步测试
+	    // 向服务端程序发送数据 同步测试  可以
 	    OutputStream ops = socket.getOutputStream();    
 	    OutputStreamWriter opsw = new OutputStreamWriter(ops);
 	    BufferedWriter bw = new BufferedWriter(opsw);
