@@ -17,7 +17,7 @@ public class test {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		Socket socket = new Socket("123.206.76.17", 808);
-	    // Ïò·şÎñ¶Ë³ÌĞò·¢ËÍÊı¾İ
+	    // å‘æœåŠ¡ç«¯ç¨‹åºå‘é€æ•°æ® åŒæ­¥æµ‹è¯•
 	    OutputStream ops = socket.getOutputStream();    
 	    OutputStreamWriter opsw = new OutputStreamWriter(ops);
 	    BufferedWriter bw = new BufferedWriter(opsw);
@@ -25,7 +25,7 @@ public class test {
 	    bw.write("1");
 	    bw.flush();
 	      
-	    // ´Ó·şÎñ¶Ë³ÌĞò½ÓÊÕÊı¾İ
+	    // ä»æœåŠ¡ç«¯ç¨‹åºæ¥æ”¶æ•°æ®
 	    InputStream ips = socket.getInputStream();
 	    InputStreamReader ipsr = new InputStreamReader(ips);
 	    BufferedReader br = new BufferedReader(ipsr);
