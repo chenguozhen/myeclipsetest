@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="ndw"
+  id="myeclipse.1506753938687"
+  context-root="/ndw"
+  j2ee-spec="5.0"
+  archive="ndw.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
