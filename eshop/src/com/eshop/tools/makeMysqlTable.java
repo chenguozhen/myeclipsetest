@@ -109,7 +109,7 @@ public class makeMysqlTable {
 	    String code="0";
 		try{
 		Connection conn=DBUtil.getConnection();
-		String sql = "CREATE TABLE "+tableName+" (u_id bigint not null AUTO_INCREMENT, u_create_user_id  bigint not null, u_state int not null, u_mark varchar(255) null, u_add_datetime  varchar(255)  not null, u_spare1 int null, u_spare2 varchar(255) null,primary key (u_id));";
+		String sql = "CREATE TABLE "+tableName+" (U_id bigint not null AUTO_INCREMENT, U_create_user_id  bigint not null, U_state int not null, U_mark varchar(255) null, U_add_datetime  varchar(255)  not null, U_spare1 int null, U_spare2 varchar(255) null,primary key (U_id));";
 		PreparedStatement pstmt = conn.prepareStatement(sql);
 		int i=pstmt.executeUpdate();
 		if(i==0){
@@ -129,13 +129,13 @@ public class makeMysqlTable {
 	 * @param columnName 字段名称
 	 * @param dataType 数据类型名称(例: varchar(50) null)
 	 * @return
-	 * 使用方法: alterTable("t1","u_na","varchar(50) null")
+	 * 使用方法: alterTable("t1","U_na","varchar(50) null")
 	 */
 	public static String alterTable(String tableName,String columnName, String dataType){
 		String code="0";
 		try{
 			Connection conn=DBUtil.getConnection();
-			String sql = "ALTER TABLE "+tableName+" ADD "+columnName+"  "+dataType+"  AFTER u_id";
+			String sql = "ALTER TABLE "+tableName+" ADD "+columnName+"  "+dataType+"  AFTER U_id";
 			PreparedStatement pstmt = conn.prepareStatement(sql);
 			int i=pstmt.executeUpdate();
 			if(i==0){
