@@ -19,7 +19,7 @@ import com.eshop.entity.EntityTest;
 public class makeDao {
 
  /**
-  * Dao代码生成工具类
+  * Dao代码生成 工具类
   * @param chenguozhen
  * @throws InvocationTargetException 
  * @throws IllegalAccessException 
