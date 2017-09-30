@@ -1,11 +1,6 @@
 package com.eshop.entity;
 
-/**
- * Entity测试类
- * @author chenguozhen
- *
- */
-public class EntityTest {
+public class EntityMyTest {
 	long U_id ;//基本属性: id
 	long U_create_user_id ;//基本属性: 操作者id
 	int U_state;//基本属性: 状态码  0表示已删除  1表示正常
@@ -79,5 +74,5 @@ public class EntityTest {
 	public void setU_name(String uName) {
 		U_name = uName;
 	}
- 
+    
 }

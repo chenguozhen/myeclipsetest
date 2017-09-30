@@ -70,8 +70,8 @@ public class makeDao {
 		  "import java.sql.SQLException;"+rt+
 		  "import java.util.ArrayList;"+rt+
 		  "import java.util.List;"+rt+
-		  "import com.dv.entity.Entity"+daoName+";"+rt+
-		  "import com.dv.util.DBUtil;"+rt+
+		  "import com.eshop.entity.Entity"+daoName+";"+rt+
+		  "import com.eshop.util.DBUtil;"+rt+
 		  "import java.net.URLDecoder;"+rt+
 		  "import java.io.UnsupportedEncodingException;"+rt+
 		  getDaoAddEntityString()+rt+
