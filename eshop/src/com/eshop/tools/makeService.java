@@ -115,7 +115,7 @@ public class makeService {
 		  "}";
 
 		  String fileName = System.getProperty("user.dir")//获取到项目的根路径
-		    + "/src/com/dv/service/Service"+serviceName+".java";
+		    + "/src/com/eshop/service/Service"+serviceName+".java";
 		  File f = new File(fileName);
 		  FileWriter fw = new FileWriter(f);
 		  fw.write(source);
@@ -238,7 +238,7 @@ public class makeService {
 		    	param=param+"String  "+nameList.get(i).toString()+"=request.getParameter(\""+nameList.get(i).toString()+"\");"+rt;
 		    	psString=psString+"entity.set"+nameList.get(i).toString()+"("+typeDataForParam+".valueOf("+nameList.get(i).toString()+"));"+rt;
 		    }
-		    param=param+"U_datetime=Tools.getDateTime();"+rt;
+		    param=param+"U_add_datetime=Tools.getDateTime();"+rt;
 		    codeString=param+psString;
 		}
 		
@@ -390,7 +390,7 @@ public class makeService {
 		    	param=param+"String  "+nameList.get(i).toString()+"=request.getParameter(\""+nameList.get(i).toString()+"\");"+rt;
 		    	psString=psString+"entity.set"+nameList.get(i).toString()+"("+typeDataForParam+".valueOf("+nameList.get(i).toString()+"));"+rt;
 		    }
-		    param=param+"U_datetime=Tools.getDateTime();"+rt;
+		    param=param+"U_add_datetime=Tools.getDateTime();"+rt;
 		  
 		    
 		    codeString=param+psString;
@@ -555,15 +555,15 @@ public class makeService {
 		    	 psString=psString+nameList.get(i).toString()+", ";
 		    	 param=param+"String "+nameList.get(i).toString()+"=request.getParameter(\""+nameList.get(i).toString()+"\");"+rt;
 		    }
-//		    param=param+"U_datetime=Tools.getDateTime();"+rt;
-		    param=param+"U_datetime=null;"+rt;
+//		    param=param+"U_add_datetime=Tools.getDateTime();"+rt;
+		    param=param+"U_add_datetime=null;"+rt;
 		    param=param+"//以下是固定变量"+rt+
-		    "String  u_datetime1=request.getParameter(\"U_datetime1\");"+rt+
-		     "String  u_datetime2=request.getParameter(\"U_datetime2\");"+rt+
+		    "String  U_add_datetime1=request.getParameter(\"U_add_datetime1\");"+rt+
+		     "String  U_add_datetime2=request.getParameter(\"U_add_datetime2\");"+rt+
 		     "String  start=request.getParameter(\"start\");"+rt+
 		     "String  sumline=request.getParameter(\"sumline\");"+rt+
 		     "String  order=request.getParameter(\"order\");"+rt;
-		    codeString= param+"list=Dao"+serviceName+".getEntity"+serviceName+"List("+psString+"u_datetime1,u_datetime2,start,sumline,order);";
+		    codeString= param+"list=Dao"+serviceName+".getEntity"+serviceName+"List("+psString+"U_add_datetime1,U_add_datetime2,start,sumline,order);";
 	  }
 		return codeString;
 	}
