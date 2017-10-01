@@ -98,9 +98,9 @@ public class makeService {
           "import org.springframework.web.bind.annotation.RequestParam;" + rt+
           "import org.springframework.web.servlet.ModelAndView;" + rt+
           "import org.springframework.web.servlet.view.RedirectView;" + rt+
-          "import com.dv.dao.Dao"+serviceName+";"+rt+
-          "import com.dv.entity.Entity"+serviceName+";" + rt+
-          "import com.dv.tools.Tools;" + rt+
+          "import com.eshop.dao.Dao"+serviceName+";"+rt+
+          "import com.eshop.entity.Entity"+serviceName+";" + rt+
+          "import com.eshop.tools.Tools;" + rt+
 		  getServiceAddEntityString()+rt+
 		  rt+
 		  rt+
